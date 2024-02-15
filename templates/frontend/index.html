@@ -45,8 +45,8 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0 ms-3">
                     {% comment %} <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1> {% endcomment %}
                     <img src="{% static 'img/logo.svg' %}" alt="Logo">
                 </a>
@@ -64,9 +64,9 @@
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5 ps-4">
                 <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
+                    <div class="row px-0 mx-0 align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Welcome to ATM.</p>
@@ -86,9 +86,9 @@
         <!-- About Start -->
         <div id="id_about" class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5 align-items-center">
+                <div class="row px-0 mx-0 g-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="row g-3">
+                        <div class="row px-0 mx-0 g-3">
                             <div class="col-6 text-start">
                                 <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="{% static 'img/about-1.jpg' %}">
                             </div>
@@ -104,11 +104,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h5 class="ff-secondary text-start text-primary fw-normal">About Us</h5>
                         <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>ATM</h1>
                         <p class="mb-4">Where punjabi Flavors Dance on Your Palate! Step into a world of Punjabi culinary delight, where every bite is a symphony of authentic tastes and vibrant spices. Get ready to indulge in a food adventure that's as exciting as it is delicious!</p>
                         <p class="mb-4">At ATM, we take immense pride in bringing the rich and vibrant flavors of Punjabi cuisine to your table. Our restaurant is more than just a place to eat; it's an immersive experience that transports you to the heart of Punjab, where every dish tells a story and every bite ignites your senses.</p>
-                        <div class="row g-4 mb-4">
+                        <div class="row px-0 mx-0 g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1,00,000</h1>
@@ -138,9 +138,9 @@
         <!-- Service Start -->
         <div id="id_service" class="container-xxl py-5">
             <div class="container">
-                <div class="row g-4">
+                <div class="row px-0 mx-0 g-4">
                     
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Services</h5>
+                    <h5 class="ff-secondary text-center text-primary fw-normal">Services</h5>
                     <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
@@ -178,7 +178,7 @@
         <div id="id_testimonial" class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h5 class="ff-secondary text-center text-primary fw-normal">Testimonial</h5>
                     <h1 class="mb-5">Our Clients Say!!!</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
@@ -271,7 +271,7 @@
 
         <!-- Contact Start -->
         <div id="id_contact" class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-0">
+            <div class="row px-0 mx-0 g-0">
                 <div class="col-md-6">
                     <div class="video ">
                         {% comment %} <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
@@ -281,11 +281,11 @@
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Contact</h5>
+                        <h5 class="ff-secondary text-start text-primary fw-normal">Contact</h5>
                         <h1 class="text-white mb-4">Contact Form Online</h1>
                         {% csrf_token %}
                         <form id="contactForm">
-                            <div class="row g-3">
+                            <div class="row px-0 mx-0 g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -350,10 +350,10 @@
         {% comment %} <div id="id_team" class="container-xxl pt-5 pb-3">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                    <h5 class="ff-secondary text-center text-primary fw-normal">Team Members</h5>
                     <h1 class="mb-5">Our Master Chefs</h1>
                 </div>
-                <div class="row g-4">
+                <div class="row px-0 mx-0 g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item text-center rounded overflow-hidden">
                             <div class="rounded-circle overflow-hidden m-4">
@@ -420,16 +420,16 @@
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
-                <div class="row g-5">
+                <div class="row px-0 mx-0 g-5">
                     <div class="col-lg-4 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <h4 class="ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
                         <a class="btn btn-link" href="#id_about">About Us</a>
                         <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/privacy-policy">Privacy Policy</a>
                         <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/terms-and-conditions">Terms & Condition</a>
                         <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/cancellation-policy">Cancellation Policy</a>
                     </div>
                     <div id="id_help" class="col-lg-4 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <h4 class="ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>BTM 2nd stage, Bangalore</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8168572936</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@atmkaro.in</p>
@@ -439,12 +439,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h4 class="ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
                         <h5 class="text-light fw-normal">Monday - Saturday</h5>
                         <p>10 AM - 11 PM</p>
                     </div>
                     {% comment %} <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <h4 class="ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
@@ -455,7 +455,7 @@
             </div>
             <div class="container">
                 <div class="copyright">
-                    <div class="row">
+                    <div class="row px-0 mx-0">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">ATM Karo (ATM AmritsariTadkeMein)</a>, All Right Reserved. 
 							
