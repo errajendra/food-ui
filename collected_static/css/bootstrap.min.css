@@ -695,6 +695,18 @@ progress {
     }
 }
 
+@media (min-width: 1600px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1600px
+    }
+}
+
 @media (min-width: 1900px) {
 
     .container,
@@ -703,7 +715,19 @@ progress {
     .container-lg,
     .container-xl,
     .container-xxl {
-        max-width: 1820px
+        max-width: 1900px
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 2000px
     }
 }
 
