@@ -58,13 +58,7 @@
                         <a href="/" class="nav-item nav-link active">Home</a>
                         <a href="#id_about" class="nav-item nav-link">About</a>
                         <a href="#id_service" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="#id_team" class="dropdown-item">Our Team</a>
-                                <a href="#id_testimonial" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
+                        <a href="#id_testimonial" class="nav-item nav-link">Testimonial</a>
                         <a href="#id_contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -87,44 +81,6 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
-        <!-- Service Start -->
-        <div id="id_service" class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Services</h5>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>On Demand Food</h5>
-                                <p>Get your orders delivered within 30-45 minutes! Enjoy quick and convenient delivery services for all your favorite food.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                <p>Quality Food Products develops and delivers high-performance powders processed with latest technology machinery.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Food on subscription basis</h5>
-                                <p>Enjoy the convenience of regular deliveries of delicious and wholesome food right to your doorstep..</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
 
 
         <!-- About Start -->
@@ -179,6 +135,139 @@
         </div>
         <!-- About End -->
 
+        <!-- Service Start -->
+        <div id="id_service" class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Services</h5>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>On Demand Food</h5>
+                                <p>Get your orders delivered within 30-45 minutes! Enjoy quick and convenient delivery services for all your favorite food.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Quality Food Products develops and delivers high-performance powders processed with latest technology machinery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Food on subscription basis</h5>
+                                <p>Enjoy the convenience of regular deliveries of delicious and wholesome food right to your doorstep..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Testimonial Start -->
+        <div id="id_testimonial" class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p> Absolutely love the flavors at ATM ! The rich and authentic Punjabi dishes take me back to the streets of Punjab. Every bite is a delightful journey.</p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Rahul Ahuja</h5>
+                                {% comment %} <small>Profession</small> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>A hidden gem for Punjabi cuisine! The warmth of the staff and the exquisite taste of the food make dining at ATM, a memorable experience.</p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Priyanka singh</h5>
+                                {% comment %} <small>Profession</small> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>As a Punjabi, finding a restaurant that matches the taste of home is a challenge. ATM not only matches it but exceeds expectations. The flavors are just like my grandmother's recipes!" </p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Rajath</h5>
+                                {% comment %} <small>Profession</small> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>The perfect blend of tradition and innovation. ATM has mastered the art of delivering classic Punjabi dishes with a modern twist. A must-visit for any food enthusiast.</p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Sikha</h5>
+                                {% comment %} <small>Profession</small> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Visiting ATM was a sensory delight. From the aromatic spices to the vibrant ambiance, it felt like a mini-vacation to Punjab. Can't wait to come back for more! </p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Alina </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p> Kudos to ATM for maintaining the authenticity of Punjabi cuisine. Each dish tells a story, and I could taste the passion and dedication in every bite.</p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1"> Sidhant</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Punjab on a plate! The variety and quality of dishes at ATM are unmatched. It's my go-to place whenever I crave true Punjabi flavors. </p>
+                        <div class="d-flex align-items-center">
+                            {% comment %} <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;"> {% endcomment %}
+                            <div class="ps-3">
+                                <h5 class="mb-1">Kavya </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
 
         <!-- Contact Start -->
         <div id="id_contact" class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
@@ -194,7 +283,8 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Contact</h5>
                         <h1 class="text-white mb-4">Contact Form Online</h1>
-                        <form>
+                        {% csrf_token %}
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -210,14 +300,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control" id="mobile" placeholder="Mobile Number" required/>
+                                        <input type="number" class="form-control" id="mobile" placeholder="Mobile Number" pattern="[6789][0-9]{9}" required/>
                                         <label for="mobile">Mobile Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control" id="mobile" placeholder="Subject" required/>
-                                        <label for="mobile">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required/>
+                                        <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -227,7 +317,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    <button id="submitContact" class="btn btn-primary w-100 py-3" type="subject">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -257,7 +347,7 @@
 
 
         <!-- Team Start -->
-        <div id="id_team" class="container-xxl pt-5 pb-3">
+        {% comment %} <div id="id_team" class="container-xxl pt-5 pb-3">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
@@ -322,67 +412,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> {% endcomment %}
         <!-- Team End -->
 
 
-        <!-- Testimonial Start -->
-        <div id="id_testimonial" class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
-                    <h1 class="mb-5">Our Clients Say!!!</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-        
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -390,10 +423,10 @@
                 <div class="row g-5">
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="#id_contact">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="#id_about">About Us</a>
+                        <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/privacy-policy">Privacy Policy</a>
+                        <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/terms-and-conditions">Terms & Condition</a>
+                        <a class="btn btn-link" target="_blank" href="https://order.atmkaro.in/policy/cancellation-policy">Cancellation Policy</a>
                     </div>
                     <div id="id_help" class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
@@ -448,6 +481,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="{% static 'lib/wow/wow.min.js' %}"></script>
     <script src="{% static 'lib/easing/easing.min.js' %}"></script>
     <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
@@ -459,6 +493,44 @@
 
     <!-- Template Javascript -->
     <script src="{% static "js/main.js" %}"></script>
+    <script>
+        $(document).ready(function(){
+          $("#submitContact").click(function(){
+            var url = "{% url 'submit_contact' %}";
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var mobile = $("#mobile").val();
+            var subject = $("#subject").val();
+            var message = $("#message").val();
+            var regMobile = new RegExp("[6789][0-9]{9}");
+            if (name == "" || mobile == "" || mobile.match(regMobile) || subject == "" || message == "") {
+              alert("Please fill out all fields");
+            } else {
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    data: {
+                        'name': name,
+                        'email': email,
+                        'mobile': mobile,
+                        'subject': subject,
+                        'message': message,
+                        'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val(),
+                    },
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log(data.message);
+                        if (data.status==200){
+                            alert(data.message);
+                        }else{
+                            alert("Error: "+data.message);
+                        }
+                    }
+                });
+            }
+          });
+        });
+    </script> 
 </body>
 
 </html>
