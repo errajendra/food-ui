@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>About Us: ATM - Amritsari Tadake Mein</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3 py-lg-0">
+                <a href="{% url 'index' %}" class="navbar-brand p-0 ms-3">
+                    {% comment %} <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1> {% endcomment %}
+                    <img src="{% static 'img/logo.svg' %}" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'about_us' %}" class="nav-item nav-link">About</a>
+                        <a href="#id_service" class="nav-item nav-link">Service</a>
+                        <a href="#id_testimonial" class="nav-item nav-link">Testimonial</a>
+                        <a href="#id_contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5 ps-4">
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!--  About Us Content -->
+        <div class="mx-3 mx-md-5">
+            <div class="text-center">
+                <h1> About Us </h1>
+            </div>
+            <div class="mx-md-5 px-md-5 mt-5">
+                <p>Welcome to Amritsari Tadke Mein!</p>
+
+                <h4>Our Story</h4>
+
+                <p>Amritsari Tadke Mein started with a passion for bringing authentic and delicious Punjabi flavors to Bangalore. Our journey began in the heart of BTM Layout - 2nd stage, where we set up our first outlet with a commitment to serving homemade-style meals prepared with love and care.</p>
+
+                <h4>Our Mission</h4>
+
+                <p>At Amritsari Tadke Mein, our mission is simple: to delight our customers with flavorful and wholesome meals that remind them of home-cooked goodness. We strive to source the freshest ingredients, handpick spices, and prepare each dish with meticulous attention to detail to ensure the highest quality and authenticity in every bite.</p>
+
+                <h4>Our Philosophy</h4>
+
+                <p>We believe in the power of good food to bring people together and create memorable experiences. Whether you&#39;re craving comforting classics or adventurous flavors, our diverse menu caters to all tastes and preferences. With a focus on taste, quality, and affordability, we aim to exceed our customers&#39; expectations with every meal.</p>
+
+                <h4>Why Choose Us?</h4>
+
+                <ol>
+                    <li>Authentic Punjabi flavors: Experience the rich and vibrant taste of Punjab with our traditional recipes passed down through generations.</li>
+                    <li>Fresh and wholesome ingredients: We source the finest ingredients to ensure the freshest and most flavorful meals for our customers.</li>
+                    <li>Convenient delivery: Enjoy the convenience of having delicious meals delivered straight to your doorstep, making mealtime hassle-free and enjoyable.</li>
+                    <li>Exceptional customer service: Our team is dedicated to providing excellent service and ensuring a pleasant dining experience for every customer.</li>
+                </ol>
+
+                <h4>Get in Touch</h4>
+
+                <p>We&#39;d love to hear from you! Whether you have feedback, questions, or simply want to say hello, feel free to reach out to us. You can contact us via WhatsApp at 8168572936 or email us at contact@atmkaro.in. Connect with us on social media to stay updated on our latest offerings and promotions.</p>
+
+                <p>Thank you for choosing Amritsari Tadke Mein. We look forward to serving you delicious meals that warm your heart and satisfy your cravings!</p>
+
+            </div>
+        </div>
+
+        <!--Footer-->
+        {% include "frontend/footer.html" %}
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static "js/main.js" %}"></script>
+    
+</body>
+
+</html>
